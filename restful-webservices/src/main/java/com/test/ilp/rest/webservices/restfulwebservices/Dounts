@@ -1,0 +1,15 @@
+Why do i need to create a sepereate ExceptionResponse class ,it dos not exptende anything.
+Cant i simply retrun a string obeject  from ExceptionHandler
+
+
+	@org.springframework.web.bind.annotation.ExceptionHandler(UserNotFoundException.class)
+	public final ResponseEntity<Object> handleUserDefinedException(Exception ex, WebRequest request) throws Exception {
+		String exceptionResponse = new String ("user Not found");
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
+
+	}
+	
+	
+	How to add multiple objectsin a single resource eg of sending all the posts of the users
+	
+	How to open mutiple database connections with the a single hibernate config file.

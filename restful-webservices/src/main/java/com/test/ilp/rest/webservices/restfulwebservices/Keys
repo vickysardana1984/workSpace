@@ -1,0 +1,5 @@
+For Validation.
+1)Keep the check on the element to be checked for eg : @Size
+2)Then use @valid annotation for checking the validaity and making sure the spring bot framerwork
+checks it.
+3) 
