@@ -1,0 +1,28 @@
+There is a file hibernate.cfg.xml which will have all the details of the connections.
+
+		<property name="hbm2ddl.auto">update</property>
+THe above property is used to tell if all the schemas need to be recreated or updated only.
+If a table already exists and you changeyour bean, then it will only updated the existing tables.
+But if you keep this properyt as Create then it will drop the table everytime and create new tables.(Never used in production).
+
+You need to tell all your mapping classes which you have kept as entity in yoru java file.
+
+
+@Entity
+It is used to tell if a class needs to be mapped into the database.
+
+@Id 
+It is used for creating primary key in the table.
+
+Hibernate can generate primary key on its own (unique).It provides annotation for the same with the strategy.
+@GeneratedValue(strategy = GenerationType.AUTO)
+
+
+@JoinColumn
+To change the name of the column in the database (different from what you have in Java).
+
+You create session factory,
+open new session
+then do the trasancations and close the trasacations and close the sessions.
+
+
