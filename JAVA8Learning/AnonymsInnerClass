@@ -1,0 +1,29 @@
+Anonyms classes//Annonymns Class : Class without a name.
+
+//Wherever there is usage of anonnyms class there is always a chance of replacing it with lambda expression.
+//But please note we cannot replace all the annonyms inner classes cannot be replaced.They are not equal.
+//Annonyms inner class is more powerful than lambda expression.
+Differences
+
+1)If annonyms inner class implments an interface which contains only one method, can be replaced with Lambda
+2)We can declare instance valrailbe inside anonyms inner class , this keyowrd will always refer to the 
+current inner class object and not the outer class object.To access the outer class object , you need to call
+OuterClass.this.x But
+This always refer to the current outer class variables only.
+
+Differences
+
+1)Lambda is a function without a name Anony inner class is a class without a name.
+2)Ann inner classes can extend abstarct and concrete classes but Lambda expression cannot.
+3)Ann inner classes can implement an interface with any number of functions but Lambda can only implement functional interface.
+4)We can declare instance variables inside Annon INnerclasses but Lambda only local varialbes.
+5)Annon inner classes can be instantiated but Lambda expression cannot be.
+6)This always refres to current annonymus inner class object whereas in Lambda it refers to Outerclass object.
+7)For annon inner class at the time of copmilation, a seperate .class file is created but not for Lambda.
+8)Memory will be allocated on demand, whenever we created object but in lambda object creation is not there hence it is saved inside Method area 
+ie. inside permanent memory area.
+
+
+Method level Local vairables inside the lambda variables are always final.(whether declared or not).if you try to change it you will get a copmile time error.
+
+

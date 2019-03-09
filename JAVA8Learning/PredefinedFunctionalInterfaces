@@ -1,0 +1,37 @@
+Predicate
+Function
+Consumer
+Supplier.
+
+
+TO check some condition java provided some predefined predicate functional interface.
+They are all present in java.util.function
+
+Predicate :
+
+Perfrom some conditional check and return true or false based on that conditions
+eg check if meployee age is greater than 50 or not.
+We can use a prediicate to perfrom conditional check
+It contains only one abstract method and name of the method is test.
+
+Interface Predicate<Type> {
+	boolean test(T t);
+}
+
+You need to specify the type of the argument while creating the predicate.
+Predicate<Integer> p = I-> I<10;
+System.out.println(p.test(100));
+
+Other examples, check if string length is less than 100, to check if collection is empty.
+
+TO reverse a condition we can use, p.negate().
+
+Predicate Joining.
+
+One abstract method test
+3 default methods
+and 
+or 
+negate
+
+ONe static method equals.

@@ -1,0 +1,32 @@
+Default Methods inside Interface
+
+Before Java 1.8 all methods in INtefrace were public and abstract and all the variables were public static final.
+Hence it is called pure abstract class.
+(Backward Compatibility)
+The main objective of default methods is to extend interface functionality without effecting implementation classes 
+
+But this rule is not applicable for versions >= jdk 1.8. 
+From 1.8 , we can declare concrete methods inside interface. All the concrete methods declared in and interface is called 
+Default method.
+IN the implmentation class we have the choice to overide default method.
+
+If a class implements two interfaces and both of them have a default method m1() in this scenario 
+you will need to override the method in your class.If you want to call one of the default methods.
+you can override and simply call <InterfaceName>.super.m1()
+
+Difference between Interface with default methods and concrete methods
+Dont copmare them
+
+1)Default method has been put in the interface to save implmentation classes from defining some mthods rather than all the implementing classses doing it
+It's purpose is not to provide meaning information  
+ 2)Interface all the vraibles are static they are not instance variables instead in an abstract class we can have instance variables.
+ 3)Inside interface we cant have constructors but we can have in abstract class.
+ 4)Functional interfaces can be used for refrencing lambda expression but abstract class cannot.
+ 5)Inside intrafcae we cannot override parent class method but in abstract class we can.
+ 6)Interface can never talk 
+ 
+ We cannot instantiate abstract class as well.
+ Deffault methods are always public 
+
+
+All the following statements are valid regarding default methods. 1. Default Methods concept came in Java 1.8 version. 2. The main objective of default methods is to extend interface functionality without effecting implementation classes(Backward Compatibility) 3. Default methods should be declared with the keyword 'default'. 4. Default methods concept is applicable only for interfaces but not for classes We can declare default methods only inside interfaces.But in classes default keyword has some other meaning which can be used to define default case inside switch statement.

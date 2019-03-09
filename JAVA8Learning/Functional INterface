@@ -1,0 +1,63 @@
+Functional Interfaces.
+
+It acts as a type for Lambda expression.
+Functional interface is used to invoke the Lambda Expression.(SAM) Single Abstract method.
+Functional Interface eg : Runnable(run), Callable(Call), ActionListner(actionPerfromed),Comparable(compareTo)
+If the interface contains only one abstract method then it is called Functional interface
+Purpose :
+ To invoke Lambda expression. 
+ 
+Properties of Functional Interface
+
+INheritance wrt to Functional INterface
+
+Case 1 
+If parent functional interface has one abstract method, and child interface has no abstract method then child 
+is a valid functional interface.
+Child Interface should have no new abstract method , then child is also Functional Interface.
+
+ 
+Case 2 : 
+
+If the child inteface method you define the same abstract (Same signature) then also child is functional interafce.
+
+NO restriction in parent or child wrt to Default and static methods.
+
+
+To invoke a lambda expression we need to create refrence of Frunctional interafce
+
+Important Questions
+Why functional interface should have only single abstract method.
+If it has multiple abstract method then how will the compiler going to which method ?
+for eg : 
+	Interface interf {
+	public void m1(int i);
+	}
+	
+	interf I = i -> SOP(i++);
+	I.m1()
+	now the compiler can map the above line with the declaration of m1 for eg : it gets to know that i is an integer
+	but if the interface looked like the following
+	
+	Interface interf {
+	public void m1(int i);
+	public void m2(int i);
+	}
+	
+	interf I = i -> SOP(i++);
+	How will the compiler get to know which method to map the lambda expression.
+	Compiler will give an error Incombaitble error.Interface not a functional interface.
+	
+	Advantage of functional interface.
+	
+	Lets say i created one interface with an abstract method and people used it for reference in lambda expression in different classes
+	Now lets say someone modifies the interface and adds another abstract method in it , this would mean all our lambda expression will give error
+	but if we add an anotation then people will get to know 
+	
+	Retruning values rules in lambda.
+	Based on Context compiler can guess the types automatically 
+	 hence we can remove type for lambda expression arguments. 
+	 Without curly braces we can not use return statement.
+	 Without curly braces we can not use return statement. 
+	 Within curly braces if we want to return some value compulsory we should use return statement.
+	

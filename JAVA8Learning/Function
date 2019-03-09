@@ -1,0 +1,28 @@
+Predicate always performs some condition and always returns true or false.
+A function is exactly same as predicate but function need not to return a boolean value but it can 
+return any value.
+Predicate is a special case of function.
+interface Function <Type,R (returnType)> --> you need to tell the return type which will be returned for the given input argument.
+
+SAM --> apply(T t).
+	
+	R apply (T t);
+	
+	eg: 
+	Function <String,Integer> f = s ->s.length();
+	
+	Difference between Predicate and Function.
+	
+1) PRedicate is used to check a condition where as function is  used to perfrom an operations.
+2)Predicate can take only one parameter which is the argument (since return type is always boolean) whereas Function can
+take 2 param ,input and output type.
+3)Predicate interface has one abstract method which is called test, whereas function contains apply.
+4)Predicate can only return boolean, function can retrun any value(result).
+
+
+Function Chaining using default methods in functions interface
+1)f1.andThen(f2) --> first f1.apply is applied and then f2.apply is applied
+2)f1.compose(f2) -->first f2.apply is applied and then fi.apply is applied.
+
+Static methods present in identity
+IT will return a function that will always return your input arguments.It is used very rarely.

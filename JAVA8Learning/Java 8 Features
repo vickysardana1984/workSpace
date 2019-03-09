@@ -1,0 +1,26 @@
+NEw Features
+Lambda
+Functional INterfaces
+Default methods
+Static methods
+
+Predefined Functional interfaces
+
+		Predicate 
+		Function
+		Consumer
+
+Resolution operator :: is introduced but in java it is not a scope resolution operator in Java.It is for method refrence and constructor refrence 
+Stream API(To perform bulk operations on COllections) . To write code in less number of lines.
+Date and Time API by joda.org, it is also known as Joda API.
+
+Most famous 
+Stram and Lambda 
+
+Specialty of Java 1.8 version.It is a major version upgrade
+Three objectives
+		To simplify programming using Stream API.Very easily and less code we can mantain requirment. It is more readable as well
+		To enable and get benefits of Functional Programming in Java.It does not mean java has become functional programming lang.Just that we are getting benefits 
+		of Functional programming by using Lambda Expression.
+		To get advantage of multi core processor/to enable parllel processing in Java.More compatible code on multipe core processors for processing improvments.  
+		

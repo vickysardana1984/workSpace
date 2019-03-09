@@ -1,0 +1,48 @@
+Lambda Expressions Explained
+
+Many langugaes(C,C++,C sharp , Ruby,Scala,Python etc) have already used Lambda. Lisp is the first language which uses lambda expressions.
+
+Benefits of Lambda(3)
+
+	To enable Functional programming in Java.You can send behaviour/functions as an argument. 
+	To write more readable and mantainable , clean and concise code .
+	To use API's very easily 
+	TO enable parllel processing Lambda expression plays a role.
+	
+	
+What is Lambda Expression : It is annonymus function with the following properties.
+							Nameless ,  Function without name.
+							NO Modifiers.
+							No Return types.
+
+If the body of lambda expression has only one statement then brackets are optional
+Type Inference : based on the context the compiler can guess the types automatically. if it is possilbe then we can remove the types 
+if you return something compiler can guess automatically.
+If your lambda expression has only one input param then then paranthesis on the input side is also not required. 
+
+
+Properties of Lambda Expressions
+
+A lambda expression can take any number of paramters.
+If multiple parameters then they should be seperated by ,
+if only one paramter then we can remove the paranthesis
+If the compiler can guess the type infrence then we can remove the type of the parameters as well(Type Inference)
+Lambda expression body can take any number of statments if they have more than one statments then {} are mandatory. 
+If body has only one statment than {} are optional.
+We can remove return keyword if function returns something.
+
+Calling of Lambda Expression
+
+
+Advantages 
+Functional programming enabled
+Reduce length of the code.
+We can handle methods/functions as argument to a method 
+We can handle methods/functions as values.
+eg : While creating a Thread i can create a runnable using lambda directly as an argument to the constructor.
+Easier to use new API's (Eg :: Stram API)
+Enable support for parllel processing.(M.Core processor advantage)
+
+ 
+
+

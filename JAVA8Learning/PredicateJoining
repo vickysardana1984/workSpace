@@ -1,0 +1,15 @@
+Example 
+if you have one predicate to check if a given number is greater than 10 or note.And another predicate to 
+check if the numnber is even or not.
+
+Requirment is to check if the given number is  greater than 10 and also even.
+p1.and(p2);
+
+Default methods inside Predicate 
+negate()
+and()
+or() 
+
+
+One static method isequal.
+Whether the given element is equal to object represented by the predicate.Internally it calls equals method. 

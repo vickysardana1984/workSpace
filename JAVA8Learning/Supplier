@@ -1,0 +1,4 @@
+Supplier wont take any input but will alwyas return something.
+
+interface Supplier<ReturnType>
+It has only one abstract method which is the get method.

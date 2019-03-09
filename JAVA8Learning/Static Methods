@@ -1,0 +1,43 @@
+Static methods in Java.
+
+Static method are no way related to object similarly interface is also not related to object.
+
+It is used to defined genrally required utility mehods which are not related to object state.These 
+methods are utility methods , they can be called by anyone using the interface name.
+From Java 8 version onwards static methods are allowed inside interface 
+and should compulsory contains implementation.
+
+Default and static cannot be together.
+
+Small Twist : 
+
+Since these are static method they cannot be used directly by the class object implmenting the interface.
+They have to be called using Interface name only. eg
+
+Interface intrf{
+	public static void m1() {
+	syso("testing..").
+	}
+}
+Class impl implements intrf {
+
+	public static void main(String args[]) {
+	impl obj = new impl();
+	impl.m1() // This is wrong will give compilation error.
+	
+	}
+} 
+
+They are not directly a part of implementation class.
+
+
+Interface static methods wrt to overriding.
+
+Overriding concept is not applicable for interface static method.you can define the same method in the 
+implementing class there is no problem .It is valid but not overriding.
+
+You can also define public static void main method in the interface.Hence we can also run the interface directly 
+without an implementing class in java 1.8.
+
+
+

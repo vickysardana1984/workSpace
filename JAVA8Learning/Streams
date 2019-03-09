@@ -1,0 +1,56 @@
+Streams
+It is of same level of importance as Lambda expression in Jdk 1.8 version.
+
+Java.io.streams is used for a sequence of characters which can be used for IO(file etc) but 1.8 version
+stream is totally different from input and output writting.
+
+This is related to collections object.
+
+Collection is a group of objects as a single entity.When you want to process objects from the collections 
+then you can go for Streams.
+
+Eg if you have a collection of students and you need to find all the students who have marks greater than 80.
+
+Filter is used on collections to filter some data whereas Map is used to do some operation on the collections.
+
+Stream is the method called on the collection object. Then you get the stream object.
+Stream method is present inside the collection interface as a default method
+Stream is an interface present in java.util.stream package introduced in java 1.8. Purpose is to process obejcts from the collection.
+
+Processing contains two steps
+1)Configuration 
+2)Processing
+
+This confugration can be done in two ways.
+1)Filter mechanism
+  Filter is used when number of  objects are lesser than the orignal object.We want to filter based on some boolean condition
+  public Stream filter(Predicate<T>) 
+2)Map mechanism
+	When we need to create a new collection where the new object has equal number of objects as the orignal collection.
+	This is based on a function/operation.
+	public stream map(Function<F,R>)
+	
+	
+1)Collect Method 
+This method collects obejcts from the stream and adds to the new collection.
+
+2)Count Method.
+It is used to calculate length of the stream after filter / processing.
+
+
+3)Sorting using Streams
+It is done using sorted method()
+Sort elements of stream based on default sorting order or customized order.
+
+4)Min and Max method.
+
+5)forEach()
+It will take a lambda expression and apply the lambda expression on each object and will not return anything
+
+6)toArray()
+We can use this method to copy objects from stream into an array.
+
+
+Streams can be used for a group of values and even for arrays. It can be used for any group of values (not only collections).
+We can get Stream using Stream.Of method.
+Stream<Integer> s = Stream.Of(9,99,999).

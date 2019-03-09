@@ -1,0 +1,10 @@
+Consumer just consumes values and perfroms operations
+ but does not return anything.It has one abstract method
+interfaceConsumer<InputType>
+void accept(T t) 
+
+It has one default method 
+  andThen
+  
+  eg : c1.addThen(c2).addThen(C3).accept(UserObject);
+  Frstc1 is applied and then c2 and then c3.

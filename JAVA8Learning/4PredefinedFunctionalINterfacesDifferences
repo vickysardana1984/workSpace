@@ -1,0 +1,15 @@
+	Property	   Predicate   			Function		   		COnsumer 				Supplier
+1)  Purpose	   To take some inputs	TO take some inputs		  To take input  			Does not take any 
+			   and perfrom boolean   and perfrom some 		  perdrom some operation    input but perfroms 
+			   checks				operation and return      but not return anything   operations and returns 
+			   						something
+			   						
+2) INterface    Predicate<T>		Function<I,R>	   		Consume<T>					Supplier<R>				
+   Declaration
+   
+3) Abstract()   boolean test<T> 	R apply<T>				void accept<T>				R get()
+
+4) defaul()     and(),or(),negate() andThen(),compose()		andThen()					None
+
+5) static()		isEqual()           Identity() 				none						none
+
