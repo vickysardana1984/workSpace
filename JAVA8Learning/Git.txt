@@ -1,0 +1,51 @@
+GIT
+
+Developed by Linux team.It is a distributed version control system.
+
+SCM : Software Conguration managment.Or Source code managment.
+
+Version Control :
+
+Different version for different releases.
+
+Earlier people worked with centralised version systesm but now we have distributed one.
+In a centralised version you have a working copy and then it is saved on one centralised server.
+eg : CVS,SCN
+IN GIT whichc is a distributed , there is no thing as a mater repo and everyone has
+
+In SVN : you first take an update do your changes and then commit which will transmit those files into the 
+central server.(the repo is only manitned on the centralised server verison control ,history etc).As client you only
+get a local copy which you modify and then commit into the server.
+
+IN Git : In this every single developer is going to have thier own sever.All revesion history etc..
+
+Git helps us to create a repo where data is stored in an organised manner.
+
+MOdified : Changed but not commited
+Staged :  you have marked a modified file to go into next snapshot version ,achived by git add command.
+It is also known as index. git add command
+Commited : Commited into the local repo.(.Git directory) git commit -m "message"  
+Pushed : pushed into remote repo.
+
+GitHub is an example of remote repo i.e hosting sevice.It is a Git repo with a web interface.
+
+
+Commands
+
+git add
+git commit
+git status
+git status -s 
+
+git log ( history)
+git log --oneline
+git log --oneline test.txt
+git log <since><until> (since and until are commit identifier/revesion)
+
+git branch (gives you the list if all branches  including the master).
+
+git branch "brnachname" : creates a new branch.
+git checkout --> to switch to the new branch
+Ti check out commits
+To check out files
+to check out branches./switch to a branch.
