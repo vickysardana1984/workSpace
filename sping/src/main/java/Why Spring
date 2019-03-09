@@ -1,0 +1,43 @@
+1) Enables writting testable code. If we use Dependency injection correctly we should be able to write good Junits easily
+it has good integration with mockito and junit.
+2)No Plumbing code. YOu majorly need to focus on the logic and not on things like connectivity to database etc. you dont need 
+to code a lot there.
+3)Staying current : it is able to come with projects like Spring cloud, microservicesusing spring boot.
+
+JPA : It is an interface defines the API and hibernate understands the interface provided by JPA
+and hibernate implements it.
+
+CDI is an interface for dependency injection.
+Spring is an implementation for it.
+
+IOC container.
+You don't need to manage the beans, no need to write new bean().
+you simply autowire.
+
+Two impmentation of IOC container in spring
+
+BeanFactory
+Application context.
+
+We use applucationcontext as spring recomends it to be used in 99% of the use cases.
+
+beanfactory provides basic managament for beans and wiring of dependencues.
+App context provides more features. 
+
+App context = Bean Factory ++ eg : AOP, Internationalization (based on locale), Webapplications.
+
+Spring recomneds application conext 99 % of the usese excepth when memory is at a premuim.
+eg :IOT
+
+
+@Component Annotations
+
+@Component : It is a generic component.
+@Repository : It is used in storage eg dealing with databases
+@Controller : MVC to define your views.
+@Service  : It is business service facade.
+
+They allow you to classfiy your comiponents across different categories.
+
+
+ 

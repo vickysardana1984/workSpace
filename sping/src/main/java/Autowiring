@@ -1,0 +1,32 @@
+Autowiring.
+Resolving multiple candidates for resolving dependencies. 
+
+ByName
+@Primary
+@Qualifier.
+
+To do autowiring by name, we need to use the name of the variable by the same name that of the class.
+
+@Primiary has higher priority over the name of the variable.
+@Qualifier : you can attach a quick name and then use the qualifier for autowire.
+
+if you have one implementation where favourtie is always the same class then @Primary is the best situations.
+
+Otherwise use autowire by name.(you don'
+t need to change the dependecy class)
+
+
+IF you try to create two instances using the context what you will get is the same bean(same object) it is clear from looking at the
+hashcode.
+In spring by default scope of a bean is singleton.
+
+Beans are created by the container and the life cycle is mantined by the container.
+Singleton : One instance per context. 
+Prototype : New bean whenever it is requested.
+For web 
+request :One bean per Http request
+session :One bean per http session.
+
+Annotation used : scope("prototype")
+
+What will happen if your class has scope singleton but the dependecies in this class have scope prototype.

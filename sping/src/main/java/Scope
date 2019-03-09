@@ -1,0 +1,26 @@
+If there is a class which looks like 
+
+A is using B 
+
+A {
+
+ B b = new B();
+}
+
+B {
+}
+
+If A is singleton and B is declared prototype then you will notice you will get same instance 
+of B as well since A is singleton.
+
+If you want to change the instance of B to get a new instance every time we create an 
+instance of the parent then we need to use Proxy.
+
+proxy=ScopedProxyMode.TargetClass
+
+A proxy is autowired and whenever that object is called, Spring makes sure a new instance is returned
+
+Section 4 lecture 21
+
+If a bean is singletong this means one instance per application context whereas
+if you implement singleton design pattern it will mean one instance per jvm/applicaiton.

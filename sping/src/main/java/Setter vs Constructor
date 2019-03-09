@@ -1,0 +1,7 @@
+IN the earlier version of Spring all mandatory depencies were autowired using constructor , if there is a
+depency without which the class could run then the recomendation is to use Setter injection.
+
+Typically these days, now a days niether constructor nor setter is defined in the class so by default 
+it will be setter dependecies.
+
+Now a days there is no differences between constructor and setter injection.

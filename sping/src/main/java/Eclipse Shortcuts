@@ -1,0 +1,15 @@
+Ctrl + Space --> Helps to import the class directly.
+Ctrl + 1 --> Rename,also to import.
+F3 : open the code 
+
+Perspective is how you arrange the different view
+eg :java perspective for writting java programs.
+
+Views : Package, console, type hirearchy, problems etc are all views.
+Ctrl + shift + F --> Used to format.
+
+Save action : 
+
+Using this you can even add functional interfaces automatically.
+You can remove unused imports
+you can remove unused variables.
